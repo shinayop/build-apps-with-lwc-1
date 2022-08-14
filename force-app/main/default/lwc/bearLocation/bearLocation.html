@@ -1,13 +1,5 @@
 <template>
-    <isExposed>true</isExposed>
-    <targets>
-        <target>lightning__RecordPage</target>
-    </targets>
-    <targetConfigs>
-        <targetConfig targets="lightning__RecordPage">
-            <objects>
-                <object>Bear__c</object>
-            </objects>
-        </targetConfig>
-    </targetConfigs>
+    <lightning-card title={cardTitle} icon-name="standard:address">
+        <lightning-map map-markers={mapMarkers} zoom-level="12"></lightning-map>
+    </lightning-card>
 </template>
